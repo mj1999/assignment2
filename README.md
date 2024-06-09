@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+![image](https://github.com/mj1999/assignment2/assets/6629383/f2ced17f-86ec-4770-a566-55680b4ad450)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
