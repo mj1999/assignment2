@@ -1,0 +1,376 @@
+.display {
+  width: 1080px;
+  box-sizing: border-box;
+  height: 116px;
+  background: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 4px;
+  position: relative;
+}
+.display:hover {
+  background-color: #f0f4f8;
+}
+.headImg {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 32px;
+  top: 18px;
+  border-radius: 6px;
+}
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 464px;
+  height: 28px;
+  left: 136px;
+  top: 24px;
+}
+.heading {
+  /* Design Earn’s Talent Leaderboard */
+
+  height: 28px;
+
+  /* Para Bold */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+
+  color: #252424;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.by {
+  /* by */
+
+  height: 18px;
+
+  /* Chips Regular */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+  letter-spacing: 0.04em;
+
+  /* Shade/Primary */
+  color: #64758b;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.author {
+  /* Superteam */
+
+  height: 28px;
+
+  /* Para Bold */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+
+  /* Shade/Subheadings */
+  color: #94a3b8;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.info {
+  /* Frame 182 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 5px;
+
+  position: absolute;
+  width: 326px;
+  height: 28px;
+  left: 136px;
+  top: 64px;
+}
+
+.credits {
+  /* Frame 183 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+
+  width: 122px;
+  height: 28px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.amount {
+  /* 700 */
+
+  width: 39px;
+  height: 28px;
+
+  /* Para Bold */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+
+  /* Black */
+  color: #252424;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.currency {
+  /* USDC */
+
+  width: 51px;
+  height: 22px;
+
+  /* H4 */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  letter-spacing: -0.01em;
+
+  /* Shade/Subheadings */
+  color: #94a3b8;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.line {
+  /* Line 1 */
+
+  width: 24px;
+  height: 0px;
+
+  /* Shade/Grey - 85 */
+  border: 1px solid #cbd8e9;
+  transform: rotate(90deg);
+
+  /* Inside auto layout */
+  flex: none;
+}
+
+.placement {
+  /* Frame 179 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+
+  width: 92px;
+  height: 22px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin-right: 8px;
+}
+.placement > span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  letter-spacing: -0.01em;
+
+  /* Shade/Primary */
+  color: #64758b;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.categoryDisplay {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  order: 3;
+  flex-grow: 0;
+}
+.category {
+  /* Frame 156 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  gap: 8px;
+  border-radius: 4px;
+
+  order: 3;
+  flex-grow: 0;
+}
+
+.category > div {
+  /* Design */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+  letter-spacing: 0.01em;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.metaInfo {
+  /* Dates and Participants */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 16px;
+
+  position: absolute;
+  width: 131px;
+  height: 60px;
+  right: 32px;
+  top: 26px;
+}
+.date {
+  /* 14/04/2023 */
+
+  width: 102px;
+  height: 22px;
+
+  /* H4 */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  letter-spacing: -0.01em;
+
+  /* Shade/Primary */
+  color: #64758b;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.participants {
+  /* Frame 181 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  width: 131px;
+  height: 22px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.count {
+  /* 36 */
+
+  width: 23px;
+  height: 22px;
+
+  /* H4 */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: right;
+  letter-spacing: -0.01em;
+
+  /* Black */
+  color: #252424;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.subtext {
+  /* Participants */
+
+  width: 100px;
+  height: 22px;
+
+  /* H4 */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  letter-spacing: -0.01em;
+
+  /* Shade/Primary */
+  color: #64758b;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}

@@ -1,0 +1,294 @@
+.display {
+  height: 80px;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.brandLogo {
+  /* Jiffyscan icon */
+
+  position: absolute;
+  width: 194px;
+  height: 36px;
+  left: 180px;
+  top: 22px;
+}
+.navItems {
+  /* Frame 389 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+
+  position: absolute;
+  width: 586px;
+  height: 32px;
+  left: calc(50% - 586px / 2 - 239px);
+  top: 24px;
+}
+.navItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-decoration: none;
+  color: #5a5a62;
+  cursor: pointer;
+}
+
+.downIcon {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.searchBarDisplay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 24px;
+  gap: 60px;
+  position: absolute;
+  width: 312px;
+  height: 32px;
+  left: calc(50% - 360px / 2 + 298px);
+  top: 20px;
+
+  /* Light/White */
+  background: #ffffff;
+  /* Light/Outline - 0.12 */
+  border: 2px solid #dadce0;
+  border-radius: 40px;
+}
+
+.searchBarDisplay:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px 0 #6386ce;
+}
+
+.searchBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  margin: 0 auto;
+  width: 312px;
+  height: 32px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+.searchBarInput {
+  border: none;
+  width: 74%;
+  height: 32px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  /* identical to box height, or 229% */
+  font-feature-settings: "calt" off;
+
+  /* Light/Subtext - 0.38 */
+  color: #9e9e9e;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.searchBarInput:focus {
+  border: none;
+  outline: none;
+}
+.profileDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 16px;
+  position: absolute;
+  width: 208px;
+  height: 64px;
+  left: 1478px;
+  top: 12px;
+  cursor: pointer;
+}
+.profile {
+  /* Avatar label group */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  width: 193px;
+  height: 40px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.profileAvatar {
+  width: 40px;
+  height: 40px;
+  background: #f9f5ff;
+  border-radius: 200px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+}
+
+.profileAvatar::after {
+  content: "";
+  /* _Avatar online indicator */
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: 0px;
+  bottom: 0px;
+  /* Custom/success */
+  background: #4caf50;
+  /* Light/White */
+  border: 1.5px solid #ffffff;
+  border-radius: 5px;
+}
+.profileAvatarDp {
+  /* Text */
+  position: absolute;
+  width: 40px;
+  height: 24px;
+  left: calc(50% - 40px / 2);
+  top: calc(50% - 24px / 2);
+  /* Text md/Medium */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  text-align: center;
+
+  /* Light/Blue */
+  color: #195bdf;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 141px;
+  height: 40px;
+}
+
+.profileName {
+  /* Text */
+
+  width: 141px;
+  height: 20px;
+
+  /* Text sm/Semibold */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  /* Light/black */
+  color: #1f1f1f;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.profileId {
+  /* Supporting text */
+  width: 141px;
+  height: 20px;
+
+  /* Text sm/Regular */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  /* Light/Sub Icons - 0.58 */
+  color: #5a5a62;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.profileMenuItem {
+  /* _Dropdown list item */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 16px;
+  gap: 12px;
+  width: 175px;
+  height: 40px;
+  background-color: white;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  z-index: 10;
+}
+
+.profileMenuItem > div {
+  width: 80px;
+  height: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5a5a62;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.profileMenuItem:hover {
+  cursor: pointer;
+  background-color: #e7e7e7;
+}
+.endIcon {
+  /* Theme */
+
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 180px;
+  top: 28px;
+}
