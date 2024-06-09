@@ -6,6 +6,64 @@ import WorkCard from "./components/workCard";
 function App() {
   const [activeTab, setActiveTab] = useState("completed");
   const [items, setItems] = useState(data.filter((item) => item.completed));
+
+  //function to filter bounties
+  const filterFunction = function (e) {
+    const newItems =
+      activeTab === "completed"
+        ? data.filter((item) => item.completed)
+        : data.filter((item) => !item.completed);
+    if (e.target.value === "All") {
+      setItems(newItems);
+    } else if (e.target.value === "Design") {
+      setItems(
+        newItems.filter((item) => {
+          if (item.category.indexOf("Design") > -1) {
+            console.log("Design");
+            return true;
+          }
+          return false;
+        })
+      );
+    } else if (e.target.value === "Frontend") {
+      setItems(
+        newItems.filter((item) => {
+          if (item.category.indexOf("Frontend") > -1) {
+            return true;
+          }
+          return false;
+        })
+      );
+    } else if (e.target.value === "Backend") {
+      setItems(
+        newItems.filter((item) => {
+          if (item.category.indexOf("Backend") > -1) {
+            return true;
+          }
+          return false;
+        })
+      );
+    } else if (e.target.value === "Blockchain") {
+      setItems(
+        newItems.filter((item) => {
+          if (item.category.indexOf("Blockchain") > -1) {
+            return true;
+          }
+          return false;
+        })
+      );
+    } else if (e.target.value === "Content") {
+      setItems(
+        newItems.filter((item) => {
+          if (item.category.indexOf("Content") > -1) {
+            return true;
+          }
+          return false;
+        })
+      );
+    }
+  };
+
   return (
     <div className="App">
       <Navbar />
@@ -60,78 +118,13 @@ function App() {
                   fill="#64748B"
                 />
               </svg>
-              <select>
+              <select onChange={filterFunction}>
                 <option>All</option>
-                <option
-                  onClick={() => {
-                    setItems(
-                      items.filter((item) => {
-                        if (item.category.find("Design")) {
-                          return true;
-                        }
-                        return false;
-                      })
-                    );
-                  }}
-                >
-                  Design
-                </option>
-                <option
-                  onClick={() => {
-                    setItems(
-                      items.filter((item) => {
-                        if (item.category.find("Frontend")) {
-                          return true;
-                        }
-                        return false;
-                      })
-                    );
-                  }}
-                >
-                  Frontend
-                </option>
-                <option
-                  onClick={() => {
-                    setItems(
-                      items.filter((item) => {
-                        if (item.category.find("Backend")) {
-                          return true;
-                        }
-                        return false;
-                      })
-                    );
-                  }}
-                >
-                  Backend
-                </option>
-                <option
-                  onClick={() => {
-                    setItems(
-                      items.filter((item) => {
-                        if (item.category.find("Blockchain")) {
-                          return true;
-                        }
-                        return false;
-                      })
-                    );
-                  }}
-                >
-                  Blockchain
-                </option>
-                <option
-                  onClick={() => {
-                    setItems(
-                      items.filter((item) => {
-                        if (item.category.find("Content")) {
-                          return true;
-                        }
-                        return false;
-                      })
-                    );
-                  }}
-                >
-                  Content
-                </option>
+                <option>Design</option>
+                <option>Frontend</option>
+                <option>Backend</option>
+                <option>Blockchain</option>
+                <option>Content</option>
               </select>
             </div>
           </div>
