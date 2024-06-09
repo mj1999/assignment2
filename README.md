@@ -2,6 +2,9 @@
 
 ![image](https://github.com/mj1999/assignment2/assets/6629383/f2ced17f-86ec-4770-a566-55680b4ad450)
 
+![image](https://github.com/mj1999/assignment2/assets/6629383/2b0733a8-9795-42b3-b3f7-ec300b6da5e9)
+
+
 Major functionalities:
  Tab switch between completed and pending,
  Filtering results under tabs
